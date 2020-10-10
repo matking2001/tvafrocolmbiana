@@ -60,3 +60,15 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Gema de bootstrap
+gem 'bootstrap', '~> 4.5.0'
+
+# Gema para formularios
+gem 'simple_form'
+
+# Gema de iconos
+gem 'font_awesome5_rails'
+
+# Gema de autenticación
+gem 'devise', '~> 4.7', '>= 4.7.3'

@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">TVA</a>
+  <div class="ml-auto" >
+    <div class="ml-auto">
+      <ul class="navbar-nav">
+        <% if user_signed_in? %>
+            <%= link_to destroy_user_session_path, method: :delete, class:"btn btn-nar text-danger" do %>
+                <i class="fas fa-sign-out-alt"></i>Cerrar sesión
+            <%end%>
+        <% elsif  %>    
+          <li class="nav-item">
+            <%= link_to 'Iniciar sesión', new_user_session_path, class:"nav-link mr-2" %>
+         </li>
+        <% end %>   
+      </ul>
+    </div>
+  </div>
+</nav>
